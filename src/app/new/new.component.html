@@ -1,0 +1,11 @@
+            <div class="container">
+                <div class="background" [ngStyle]="{'background-image': 'url(' + currentBackground + ')'}"></div>
+                <div class="scrollable-content" (scroll)="onScroll($event)">
+                  <div class="scrollable-section" *ngFor="let section of sections; let i = index">
+                    <div class="text-box">
+                      <h2>{{ section.title }}</h2>
+                      <p>{{ section.content }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>

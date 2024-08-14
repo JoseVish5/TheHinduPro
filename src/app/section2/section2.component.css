@@ -1,0 +1,160 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: fixed;
+    top: 100px;
+    left: 11px;
+    width: 80%;
+    height: 80%;
+    background-size: contain; /* Scale the image to fit the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: left; /* Center the image */
+    z-index: -1;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+  }
+
+  .scrollable-content {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+  }
+  
+  .scrollable-section {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* .text-box {
+    text-align: right;
+    margin-top: -110px;
+    margin-right: -1235px;
+  }
+  
+  .text-box h2 {
+    margin-bottom: 20px;
+    max-width: 59%;
+    text-align: right;
+    font-size: 2em;
+  }
+  
+  .text-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  } */
+
+  /* Container styling */
+  .text-box {
+    position: absolute; /* Use absolute positioning to place the box precisely */
+    right: 25px; /* Align the box to the right edge of the page */
+    top: 270px;
+    text-align: right; /* Align text to the right */
+    width: 30%;
+    word-wrap: break-word; /* Ensures long words break and wrap onto the next line */
+    hyphens: auto;
+  }
+
+  h3{
+    color: #9c70d6;
+    font-size: 1.5em;
+    margin-top: -17px;
+    text-align: right; /* Align text to the right */
+
+  }
+
+
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .text-box {
+      max-width: 95%; /* Increase width for smaller screens */
+      padding: 20px; /* Add padding for better spacing */
+  max-width: 90%; /* Adjust max-width to ensure responsiveness */
+  box-sizing: border-box; /* Include padding and border in total width */
+  text-align: right; /* Align text to the right */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: background color with slight transparency */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  left: 35px;
+        width: 80%;
+    }
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  
+  @media (max-width: 480px) {
+    .text-box {
+      max-width: 100%; /* Ensure full width on very small screens */
+      padding: 20px; /* Add padding for better spacing */
+  max-width: 90%; /* Adjust max-width to ensure responsiveness */
+  box-sizing: border-box; /* Include padding and border in total width */
+  text-align: right; /* Align text to the right */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: background color with slight transparency */
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  left: 35px;
+        width: 80%;
+    }
+  }
+  h3{
+    font-size: 1.2em;
+  }
+  
+
+/* Heading styling */
+.text-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Adjust font size for responsiveness */
+  max-width: 100%; /* Ensure the heading doesn't overflow */
+  text-align: right;
+}
+
+/* Paragraph styling */
+.text-box p {
+  font-size: 1em; /* Use relative units for font size */
+  line-height: 1.5;
+  max-width: 100%; /* Ensure the paragraph doesn't overflow */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .text-box {
+    margin: 0 10px; /* Add margins for smaller screens */
+  }
+
+  .text-box h2 {
+    font-size: 1.2em; /* Smaller font size for smaller screens */
+  }
+
+  .text-box p {
+    font-size: 0.9em; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-box {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .text-box h2 {
+    font-size: 1em; /* Further reduce font size for very small screens */
+  }
+
+  .text-box p {
+    font-size: 0.8em; /* Further reduce font size for very small screens */
+  }
+}
+
+  
+  
+  

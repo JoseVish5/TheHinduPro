@@ -1,0 +1,48 @@
+<div class="homepage">
+    <header class="header">
+      <h1 class="title">Welcome to The Daily News</h1>
+      <p class="subtitle">Your source for the latest news and updates</p>
+    </header>
+  
+    <section class="top-stories">
+      <h2 class="section-title">Latest News</h2>
+      <div class="stories">
+        <div class="story" *ngFor="let story of topStories">
+          <img [src]="story.image" alt="Story image" class="story-image">
+          <h3 class="story-title">{{ story.title }}</h3>
+          <p class="story-description">{{ story.description }}</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="latest-news">
+      <h2 class="section-title">Top Stories</h2>
+      <div class="news">
+        <div class="news-item" *ngFor="let news of latestNews">
+          <img [src]="news.image" alt="News image" class="news-image">
+          <h3 class="news-title">{{ news.title }}</h3>
+          <p class="news-description">{{ news.description }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="top-videos">
+      <h2 class="section-title">Top Videos</h2>
+      <div class="videos">
+        <div class="video" *ngFor="let video of topVideos">
+          <div class="video-container">
+            <video #videoElement class="video-element" [attr.src]="video.url" preload="none" muted></video>
+            <img [src]="video.thumbnail" alt="Video thumbnail" class="video-thumbnail">
+            <div class="video-overlay">
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <h3 class="video-title">{{ video.title }}</h3>
+        </div>
+      </div>
+    </section> -->
+  </div>
+
+  <app-footer></app-footer>
+
+  

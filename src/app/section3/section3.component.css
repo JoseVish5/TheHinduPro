@@ -1,0 +1,102 @@
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .background {
+    /* Full viewport size */
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-color: #262626; /* Text color */
+    overflow: auto;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Cover the entire area */
+    z-index: 1; /* Place the image behind the content */
+  }
+  
+  .content {
+    position: relative;
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Space around the text */
+    z-index: 1; /* Place content above the image */
+    /* Additional styling if needed */
+  }
+  
+  h1 {
+    margin: 120px;
+    font-size: 3em; /* You can change this to 3vw or 3vh for responsiveness */
+    line-height: 1.2;
+    max-width: 60%;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  
+  .p1, p {
+    font-size: 1.5em; /* You can change this to 1.5vw or 1.5vh for responsiveness */
+    line-height: 1.2;
+    max-width: 46%;
+    display: inline-block;
+    word-wrap: break-word;
+    text-align: left; /* Align text to the left */
+  }
+
+  .p1 {
+    text-align: center; /* Align text to the left */
+
+  }
+  
+  /* Media queries to adjust text size for different screen widths */
+  @media (max-width: 1200px) {
+    h1 {
+      font-size: 2.5em;
+      display: inline-block;
+    word-wrap: break-word;
+    }
+    .p1, p {
+      font-size: 1.3em;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 2em;
+      display: inline-block;
+    word-wrap: break-word;
+    }
+    .p1, p {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.75em;
+      display: inline-block;
+    word-wrap: break-word;
+    }
+    .p1, p {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5em;
+
+    }
+    .p1, p {
+      font-size: 1em;
+    }
+  }
+  
+  

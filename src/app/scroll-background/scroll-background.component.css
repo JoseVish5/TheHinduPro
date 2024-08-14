@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background {
+    background-color: #eee8f6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain; /* Scale the image to fit the container */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    z-index: -1;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+  }
+
+  .scrollable-content {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+  }
+  
+  .scrollable-section {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .text-box {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: -110px;
+  }
+  
+  .text-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .text-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

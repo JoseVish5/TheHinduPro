@@ -1,0 +1,138 @@
+#headline-block {
+  overflow-x: hidden;
+  width: 100% !important;
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.paragraph1 {
+  color: #404040;
+  font-family: Knowledge, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 0.8rem; /* Adjust font size for readability */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.intro-paragraph2 {
+  color: #404040;
+  font-size: 1.2em;;
+  line-height: 1.5;
+  margin: 20px auto;
+  max-width: 56%;
+  padding: 0 20px;
+  font-family: 'Georgia', serif;
+  margin-right: 223px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.drop-cap {
+  margin-left: -2px;
+    margin-right: 5px;
+  font-size: 3.3em;
+  font-weight: 900;
+  filter: blur(2px);
+  color: #074563;
+  float: left;
+  line-height: .9;
+  font-family: Knowledge, sans-serif;
+}
+
+.r32 {
+  width: 100%; /* Full width for responsive images */
+  max-width: 600px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto; /* Center the image with consistent vertical margins */
+  display: block; /* Ensure the image is treated as a block-level element */
+}
+
+.header-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100%; /* Ensure it takes the full height */
+}
+
+.header-container::before {
+  content: "";
+  background-image: url('https://www.reuters.com/graphics/OLYMPICS-2024/SURFING/akpeoxnyopr/cdn/images/header-image.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place it behind the text */
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 50%;
+  right: 2vw;
+  transform: translateY(-50%) !important;
+  color: #fcfbfc;
+  font-weight: 800;
+  letter-spacing: -3.3px;
+  text-transform: uppercase;
+  gap: 0px;
+  line-height: 100%;
+  margin: 0;
+  transform-origin: center right;
+  scale: 1.25;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.dek {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scrolly-container {
+  opacity: 1;
+  height: 1200svh; /* Ensure the container takes enough space for scrolling */
+  position: relative;
+}
+
+[data-scrolly-container] {
+  display: block;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+

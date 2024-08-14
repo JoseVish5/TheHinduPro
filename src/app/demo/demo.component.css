@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .parallax-background {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .text-content {
+    max-width: 90%; /* Adjust the width as needed */
+    padding: 20px; /* Padding around the text */
+  }
+  
+  .text-content h1 {
+    font-size: 2rem; /* Adjust font size for heading */
+    margin-bottom: 1rem; /* Space between heading and paragraphs */
+  }
+  
+  .text-content h2 {
+    font-size: 1rem; /* Adjust font size for heading */
+    font-weight: lighter;
+  }
+  
+  .text-content h3 {
+    font-size: 1rem; /* Adjust font size for paragraphs */
+    margin-top: 1rem;
+    margin-bottom: -14px;
+    font-weight: lighter;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .text-content h1 {
+      font-size: xx-large; /* Adjust font size for smaller screens */
+    }
+  
+    .text-content h2 {
+      font-size: x-large; /* Adjust font size for smaller screens */
+    }
+  
+    .text-content h3 {
+      font-size: large; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  .section-1 {
+    background-image: url('https://img.freepik.com/premium-vector/vector-digital-simple-world-map-flat-style_746620-95.jpg');
+  }
+  
+  .section-2 {
+    background-image: url('https://img.freepik.com/free-vector/vintage-theme-drawing-world-map_52683-26577.jpg?w=1480&t=st=1722261944~exp=1722262544~hmac=89a56c4b206e49865b0635778604aca835fa4439324d6157e4c44a9d0a60cb49');
+  }
+  
+  .section-3 {
+    background-image: url('https://img.freepik.com/free-vector/professional-world-map-infographic_23-2148314323.jpg?w=1480&t=st=1722261966~exp=1722262566~hmac=45519ae6b71ab83590ffda7b0e1e71a184196003e8667bf2921b474141ced2d3');
+  }
+  
+  .section-4 {
+    background-image: url('https://img.freepik.com/premium-vector/vector-digital-simple-world-map-flat-style_746620-95.jpg');
+  }
+  
+  .section-5 {
+    background-image: url('https://img.freepik.com/free-vector/vintage-theme-drawing-world-map_52683-26577.jpg?w=1480&t=st=1722261944~exp=1722262544~hmac=89a56c4b206e49865b0635778604aca835fa4439324d6157e4c44a9d0a60cb49');
+  }
+  
+  .section-6 {
+    background-image: url('https://img.freepik.com/free-vector/professional-world-map-infographic_23-2148314323.jpg?w=1480&t=st=1722261966~exp=1722262566~hmac=45519ae6b71ab83590ffda7b0e1e71a184196003e8667bf2921b474141ced2d3');
+  }
+  
+  

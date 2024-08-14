@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navigation styling */
+  nav {
+    background-color: #9c70d6; /* Background color of the navigation bar */
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative; /* Ensure z-index works */
+    z-index: 10; /* Ensure nav-container is above other content */
+  }
+
+  .header {
+    padding-top: 60px; /* Adjust padding to ensure content is not hidden */
+  }
+
+  /* Logo styling */
+.logo {
+  display: flex;
+  align-items: center; /* Vertically align items in the logo container */
+}
+
+/* Logo image styling */
+.logo-image {
+  height: 40px; /* Adjust size of the logo */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .company {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  ul li {
+    margin: 0 15px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust according to header height */
+      right: 0;
+      width: 100%;
+      background-color: #9c70d6;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      max-height: 0; /* Hide by default */
+    }
+  
+    ul.active {
+      max-height: 500px; /* Adjust as needed for menu items */
+    }
+  
+    ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    ul li a {
+      font-size: 1.2rem;
+    }
+  
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  

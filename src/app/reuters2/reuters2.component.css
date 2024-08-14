@@ -1,0 +1,125 @@
+   html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  box-sizing: border-box;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: inherit; /* Inherit box-sizing from html */
+}
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically on smaller screens */
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 150px; /* Set a fixed width for better control */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px 0; /* Adjust top and bottom margins */
+  }
+  
+  .Graph-image, .map-image, .graph2-image, .maps-image {
+    width: 100%; /* Full width for responsive images */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Consistent margin for spacing */
+  }
+  
+  .headline {
+    color: #404040;
+    font-weight: 700;
+    font-family: Knowledge, sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 5px 0;
+  }
+  
+  .paragraph {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 400; /* Standard font weight */
+    font-size: 1.2rem; /* Adjust font size for readability */
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .paragraph1 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 0.8rem; /* Adjust font size for readability */
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    font-size: 1.2rem; /* Adjust font size for responsiveness */
+    line-height: 1.6;
+    font-weight: 300; /* Lighter font weight */
+    text-align: left;
+    margin: 20px auto; /* Center horizontally with auto margins */
+    max-width: 800px; /* Maximum width for larger screens */
+    margin-right: -292px;
+    margin-left: 2px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .headline {
+      font-size: 2rem; /* Adjust for smaller screens */
+    }
+  
+    .paragraph, .paragraph1, .paragraph2 {
+        margin-left: 8px;
+        font-size: 0.8rem;
+    }
+  
+    .profile-image {
+      width: 80px; /* Adjust size for smaller screens */
+    }
+  
+    .Graph-image, .map-image, .graph2-image, .maps-image {
+      max-width: 100%; /* Ensure images fit the screen width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headline {
+      font-size: 1.5rem; /* Further adjust for very small screens */
+    }
+  
+    .paragraph, .paragraph1, .paragraph2 {
+        margin-left: 8px;
+        font-size: 0.7rem;
+    }
+
+    .paragraph2{
+    margin-left: -6px;
+
+    }
+  
+    .profile-image {
+      width: 60px; /* Further adjust size */
+    }
+  }
+  

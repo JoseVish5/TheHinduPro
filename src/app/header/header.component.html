@@ -1,0 +1,22 @@
+<nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="Company Logo" class="logo-image">
+        <span class="company" routerLink="/home">The Company</span>
+      </div>
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul [class.active]="menuOpen">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/scroll-background">Reuters</a></li>
+        <li><a routerLink="/section2">Hindustan</a></li>
+        <li><a routerLink="/section3">Business</a></li>
+        <li><a routerLink="/reuters2">Reuters2</a></li>
+        <li><a routerLink="/reuters3">Demo</a></li>
+      </ul>
+    </div>
+  </nav>
+  
